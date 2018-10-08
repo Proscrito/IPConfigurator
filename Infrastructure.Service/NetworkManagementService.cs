@@ -11,9 +11,6 @@ namespace Infrastructure.Service
 
         public NetworkManagementService()
         {
-            log4net.Config.XmlConfigurator.Configure();
-            log4net.LogManager.GetLogger(typeof(Program));
-
             InitializeComponent();
         }
 
