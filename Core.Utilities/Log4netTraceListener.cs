@@ -8,7 +8,7 @@ namespace Core.Utilities
 
         public Log4netTraceListener()
         {
-            _log = log4net.LogManager.GetLogger("System.Diagnostics.Redirection");
+            _log = log4net.LogManager.GetLogger("TraceLogger");
         }
 
         public Log4netTraceListener(log4net.ILog log)
@@ -18,12 +18,12 @@ namespace Core.Utilities
 
         public override void Write(string message)
         {
-            _log?.Debug(message);
+            _log?.Info(message);
         }
 
         public override void WriteLine(string message)
         {
-            _log?.Debug(message);
+            _log?.Info(message);
         }
     }
 }

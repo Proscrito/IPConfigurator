@@ -18,6 +18,7 @@ namespace Core.Service
 
         public IEnumerable<string> Get(string ip = null)
         {
+            Trace.WriteLine("Got list request");
             var result = new List<string>();
 
             try
@@ -37,6 +38,7 @@ namespace Core.Service
 
         public string Post(IPDescriptor value)
         {
+            Trace.WriteLine("Got add request");
             var success = ValidateValue(value);
 
             if (success)

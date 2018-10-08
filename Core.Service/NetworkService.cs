@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Microsoft.Owin.Hosting;
 
 namespace Core.Service
@@ -13,6 +14,7 @@ namespace Core.Service
         public NetworkService()
         {
             _selfHost = WebApp.Start<Startup>(BaseAddress);
+            Trace.WriteLine("Self hosting started");
         }
 
         public void Dispose()

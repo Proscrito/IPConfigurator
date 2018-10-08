@@ -6,3 +6,11 @@
 /Core/Core.csproj.user
 /Core.Service/Core.Service.csproj.user
 /packages
+/Core/bin/Debug
+/Core/obj/Debug
+/Core.Utilities/bin/Debug
+/Core.Utilities/obj/Debug
+/Infrastructure.ConsoleHost/bin/Debug
+/Infrastructure.ConsoleHost/obj/Debug
+/Core.Service/bin/Debug
+/Core.Service/obj/Debug
